@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-            "defaultValue": "sarahdevops-dev",
+            "defaultValue": "sarah458devops-dev",
             "type": "String"
         },
         "hostingPlanName": {
