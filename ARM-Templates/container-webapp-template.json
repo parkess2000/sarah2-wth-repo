@@ -7,7 +7,7 @@
             "type": "String"
         },
         "hostingPlanName": {
-            "defaultValue": "<sarahdevops-asp",
+            "defaultValue": "<sarah458devops-asp",
             "type": "String"
         },
         "appInsightsLocation": {
@@ -15,7 +15,7 @@
             "type": "String"
         },
         "appInsightsName": {
-            "defaultValue": "sarahdevops-ai",
+            "defaultValue": "sarah458devops-ai",
             "type": "String"
         },        
         "sku": {
@@ -23,11 +23,11 @@
             "type": "String"
         },
         "registryName": {
-            "defaultValue": "sarahdevopsreg",
+            "defaultValue": "sarah458devopsreg",
             "type": "String"
         },
         "imageName": {
-            "defaultValue": "sarahdevopsimage",
+            "defaultValue": "sarah458devopsimage",
             "type":"String"
         },
         "registryLocation": {
