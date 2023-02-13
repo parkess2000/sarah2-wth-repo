@@ -22,6 +22,6 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: "wth-sarah-rg"
+        resourceGroupName: "sp-wth-rg"
         template: ./ARM-Templates/container-webapp-template.json
         parameters: webAppName=WTHAppSP-${{ env.targetEnv }}
