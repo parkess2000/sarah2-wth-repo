@@ -1,19 +1,22 @@
+name: "Deploy"
+
 on:
-  push
+  workflow_dispatch:
 
 env:
   targetEnv: Dev
 
-name: Azure ARM
 jobs:
-  build-and-deploy:
+  deploy-to-dev:
     runs-on: ubuntu-latest
+    environment: dev
+    
     steps:
     # Checkout code
-    - uses: actions/checkout@main
+    - uses: actions/checkout@mainv2.5.0
 
       # Log into Azure
-    - uses: azure/login@v1
+    - uses: azure/login@v@v1.4.6
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
