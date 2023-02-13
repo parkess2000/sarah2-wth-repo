@@ -19,9 +19,11 @@ jobs:
 
       # Deploy ARM template
     - name: Run ARM deploy
-      uses: azure/arm-deploy@v1
+      uses: azure/arm-deploy@vv1.0.8
       with:
+        scope: resourcegroup
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./ARM-Templates/container-webapp-template.json
+        resourceGroupName: "WTH-GitHub-RG"
+        template: "ARM-Templates/container-webapp-template.json"
         parameters: webAppName=WTHApp-${{ env.targetEnv }}
+        deploymentMode: Incremental
