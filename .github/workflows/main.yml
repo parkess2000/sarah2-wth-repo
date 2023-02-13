@@ -13,10 +13,10 @@ jobs:
     
     steps:
     # Checkout code
-    - uses: actions/checkout@mainv2.5.0
+    - uses: actions/checkout@m2.5.0
 
       # Log into Azure
-    - uses: azure/login@v@v1.4.6
+    - uses: azure/loginv@v1.4.6
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
