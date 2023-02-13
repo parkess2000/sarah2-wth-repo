@@ -20,7 +20,3 @@ on: [push]
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: "WTH-GitHub-RG"
           template: "ARM-Templates/container-webapp-template.json"
-          parameters: storageAccountType=Standard_LRS
-
-        # output containerName variable from template
-      - run: echo ${{ steps.deploy.outputs.containerName }}
