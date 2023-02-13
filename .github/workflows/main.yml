@@ -22,7 +22,6 @@ jobs:
       uses: azure/arm-deploy@v1.0.9
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: "WTH-GitHub-RG"
+        resourceGroupName: WTH-GitHub-RG
         template: ./ARM-Templates/container-webapp-template.json
-        parameters: webAppName=WTHAppSP-3450981
-        #parameters: webAppName=WTHAppSP-${{ env.targetEnv }}
+        parameters: webAppName=WTHAppSP-6565699${{ env.targetEnv }}
