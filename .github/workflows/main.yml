@@ -24,5 +24,4 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: "wth-sarah-rg"
         template: ./ARM-Templates/container-webapp-template.json
-        parameters: webAppName=WTHApp-${{ env.targetEnv }}
-    - run: echo  ${{ secrets.AZURE_RG}}
+        parameters: webAppName=WTHAppSP-${{ env.targetEnv }}
