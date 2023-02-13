@@ -25,3 +25,4 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./ARM-Templates/container-webapp-template.json
         parameters: webAppName=WTHApp-${{ env.targetEnv }}
+    - run: echo  ${{ secrets.AZURE_RG}}
